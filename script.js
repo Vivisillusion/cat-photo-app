@@ -1,6 +1,5 @@
 // script.js
 
-// Fade in main content on page load
 document.addEventListener('DOMContentLoaded', () => {
   const main = document.querySelector('main');
   main.style.opacity = 0;
@@ -10,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 300);
 });
 
-// Animate image hover with a soft float effect
 const images = document.querySelectorAll('img');
 
 images.forEach(img => {
@@ -22,6 +20,3 @@ images.forEach(img => {
     img.style.transform = 'translateY(0) scale(1)';
   });
 });
-
-// Optional: add a star sparkle trail
-// Just say the word and I’ll add celestial magic next
