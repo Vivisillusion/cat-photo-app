@@ -101,6 +101,28 @@ figcaption {
 
 /* ==== Footer ==== */
 footer {
+  /* === Petal Animation === */
+.petal {
+  position: fixed;
+  top: -2rem;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+
   text-align: center;
   padding: 1rem;
   color: #888;
