@@ -1,108 +1,40 @@
-/* === Witchwire: CatPhotoApp Edition === */
-
-/* ==== Root Variables for Theme ==== */
-:root {
-  --bg-color: #1b1b1e;
-  --text-color: #f5f1ed;
-  --accent-color: #a8401e;
-  --muted-accent: #c27857;
-  --card-bg: #2a2a2e;
-  --border-color: #3e3e42;
-  --shadow: rgba(0, 0, 0, 0.4);
-}
-
-/* ==== Base Layout ==== */
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: 'Georgia', serif;
+  font-family: 'Comic Sans MS', cursive;
+  background-color: #fff0f6;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  overflow-x: hidden;
+  cursor: url('https://cur.cursors-4u.net/cursors/cur-9/cur802.cur'), auto;
 }
 
-/* ==== Main Container ==== */
 main {
   max-width: 700px;
-  background: var(--card-bg);
-  margin: 3rem auto;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 0 20px var(--shadow);
-  border: 1px solid var(--border-color);
-}
-
-/* ==== Headers ==== */
-h1, h2, h3 {
-  color: var(--accent-color);
-  text-align: center;
-}
-
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-}
-
-h2 {
-  font-size: 1.8rem;
-  margin-top: 2rem;
-}
-
-h3 {
-  font-size: 1.3rem;
-  margin-top: 1.5rem;
-}
-
-/* ==== Links ==== */
-a {
-  color: var(--muted-accent);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: var(--accent-color);
-  text-decoration: underline;
-}
-
-/* ==== Images ==== */
-img {
-  display: block;
-  max-width: 100%;
-  margin: 1rem auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px var(--shadow);
-  border: 2px solid var(--border-color);
-}
-
-/* ==== Lists ==== */
-ul, ol {
-  padding-left: 2rem;
-  margin: 1rem 0;
-}
-
-li {
-  margin-bottom: 0.5rem;
-}
-
-/* ==== Figure & Figcaption ==== */
-figure {
-  text-align: center;
   margin: 2rem auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
-figcaption {
-  font-style: italic;
-  color: var(--muted-accent);
-}
-
-/* ==== Footer ==== */
-footer {
+h1, h2, h3 {
+  color: #ff69b4;
   text-align: center;
-  padding: 1rem;
-  color: #888;
-  font-size: 0.85rem;
+}
+
+a {
+  color: #d63384;
+}
+
+img {
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+}
+
+canvas#petals {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1000;
 }
