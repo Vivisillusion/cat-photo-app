@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CatPhotoApp</title>
+</head>
+<body>
+  <main>
+    <h1>CatPhotoApp</h1>
+
+    <section>
+      <h2>Cat Photos</h2>
+      <p>Everyone loves 
+        <a href="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg" target="_blank">
+          cute cats
+        </a> online!
+      </p>
+      <p>See more 
+        <a target="_blank" href="https://www.pexels.com/search/cat/">cat photos</a> in our gallery.
+      </p>
+      <a href="https://www.pexels.com/photo/orange-tabby-cat-lying-on-gray-concrete-surface-617278/">
+        <img src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg" alt="A cute orange cat lying on its back." width="300">
+      </a>
+    </section>
+
+    <section>
+      <h2>Cat Lists</h2>
+
+      <h3>Things cats love:</h3>
+      <ul>
+        <li>catnip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+      </ul>
+
+      <figure>
+        <img src="https://images.pexels.com/photos/2337842/pexels-photo-2337842.jpeg" alt="A slice of lasagna on a plate." width="300">
+        <figcaption>Cats <em>love</em> lasagna.</figcaption>  
+      </figure>
+
+      <h3>Top 3 things cats hate:</h3>
+      <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+      </ol>
+
+      <figure>
+        <img src="https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg" alt="Five cats looking around a field." width="300">
+        <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      No Copyright - <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp.org</a>
+    </p>
+  </footer>
+</body>
+</html>
