@@ -77,7 +77,32 @@ img {
   box-shadow: 0 0 10px var(--shadow);
   border: 2px solid var(--border-color);
 }
-/* === Petal Animation === */
+
+
+/* ==== Lists ==== */
+ul, ol {
+  padding-left: 2rem;
+  margin: 1rem 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* ==== Figure & Figcaption ==== */
+figure {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+figcaption {
+  font-style: italic;
+  color: var(--muted-accent);
+}
+
+/* ==== Footer ==== */
+footer {
+  /* === Petal Animation === */
 .petal {
   position: fixed;
   top: -2rem;
@@ -106,28 +131,3 @@ img {
 }
 
 
-
-/* ==== Lists ==== */
-ul, ol {
-  padding-left: 2rem;
-  margin: 1rem 0;
-}
-
-li {
-  margin-bottom: 0.5rem;
-}
-
-/* ==== Figure & Figcaption ==== */
-figure {
-  text-align: center;
-  margin: 2rem auto;
-}
-
-figcaption {
-  font-style: italic;
-  color: var(--muted-accent);
-}
-
-/* ==== Footer ==== */
-footer {
-  
