@@ -1,30 +1,3 @@
-/* === Witchwire: CatPhotoApp Edition === */
-
-/* ==== Root Variables for Theme ==== */
-:root {
-  --bg-color: #1b1b1e;
-  --text-color: #f5f1ed;
-  --accent-color: #a8401e;
-  --muted-accent: #c27857;
-  --card-bg: #2a2a2e;
-  --border-color: #3e3e42;
-  --shadow: rgba(0, 0, 0, 0.4);
-}
-
-/* ==== Base Layout ==== */
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: 'Georgia', serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* ==== Plaid Vertical Ribbon === */
 body::before {
   content: "";
   position: fixed;
@@ -32,92 +5,21 @@ body::before {
   left: 0;
   width: 80px;
   height: 100vh;
-  background-image: url('1f94efbb-2f10-47b6-88e4-37fb708c01ec.png');
-  background-repeat: repeat-y;
-  background-size: cover;
-  border-right: 2px solid var(--accent-color);
+  background-image:
+    repeating-linear-gradient(45deg, #b30000 0 10px, #ffffff 10px 20px),
+    repeating-linear-gradient(-45deg, #007a00 0 10px, transparent 10px 20px);
+  background-blend-mode: multiply;
+  background-color: #fff;
   z-index: -1;
 }
 
-/* ==== Main Container ==== */
+/* Desloca o conteúdo para o lado para não ficar embaixo da faixa */
 main {
   max-width: 700px;
   background: var(--card-bg);
-  margin: 3rem auto 3rem 100px; /* pushes content away from ribbon */
+  margin: 3rem auto 3rem 100px; /* espaço da faixa + margem */
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 0 20px var(--shadow);
   border: 1px solid var(--border-color);
-}
-
-/* ==== Headers ==== */
-h1, h2, h3 {
-  color: var(--accent-color);
-  text-align: center;
-}
-
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-}
-
-h2 {
-  font-size: 1.8rem;
-  margin-top: 2rem;
-}
-
-h3 {
-  font-size: 1.3rem;
-  margin-top: 1.5rem;
-}
-
-/* ==== Links ==== */
-a {
-  color: var(--muted-accent);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: var(--accent-color);
-  text-decoration: underline;
-}
-
-/* ==== Images ==== */
-img {
-  display: block;
-  max-width: 100%;
-  margin: 1rem auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px var(--shadow);
-  border: 2px solid var(--border-color);
-}
-
-/* ==== Lists ==== */
-ul, ol {
-  padding-left: 2rem;
-  margin: 1rem 0;
-}
-
-li {
-  margin-bottom: 0.5rem;
-}
-
-/* ==== Figure & Figcaption ==== */
-figure {
-  text-align: center;
-  margin: 2rem auto;
-}
-
-figcaption {
-  font-style: italic;
-  color: var(--muted-accent);
-}
-
-/* ==== Footer ==== */
-footer {
-  text-align: center;
-  padding: 1rem;
-  color: #888;
-  font-size: 0.85rem;
 }
