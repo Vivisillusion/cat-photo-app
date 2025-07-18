@@ -114,27 +114,20 @@ body::before {
   width: 80px;
   height: 100vh;
   background-image:
-    repeating-linear-gradient(
-      0deg,
-      #a80000,
-      #a80000 10px,
-      #0a600a 10px,
-      #0a600a 20px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      #a80000,
-      #a80000 10px,
-      #0a600a 10px,
-      #0a600a 20px
-    );
-  background-blend-mode: multiply;
+    
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100vh;
+  background-image: url('1f94efbb-2f10-47b6-88e4-37fb708c01ec.png');
+  background-repeat: repeat-y;
+  background-size: cover;
   border-right: 2px solid var(--accent-color);
   z-index: -1;
 }
 
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 0 20px var(--shadow);
-  border: 1px solid var(--border-color);
-}
