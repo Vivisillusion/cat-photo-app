@@ -106,3 +106,34 @@ footer {
   color: #888;
   font-size: 0.85rem;
 }
+/* === Plaid Vertical Lace on the Left === */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100vh;
+  background-image: repeating-linear-gradient(
+      45deg,
+      #a8401e,
+      #a8401e 10px,
+      #1b1b1e 10px,
+      #1b1b1e 20px,
+      #c27857 20px,
+      #c27857 30px,
+      #1b1b1e 30px,
+      #1b1b1e 40px
+  );
+  border-right: 2px solid var(--accent-color);
+  z-index: -1;
+}
+main {
+  max-width: 700px;
+  background: var(--card-bg);
+  margin: 3rem auto 3rem 80px; /* ← shift it to the right */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px var(--shadow);
+  border: 1px solid var(--border-color);
+}
