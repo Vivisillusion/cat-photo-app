@@ -24,11 +24,26 @@ body {
   min-height: 100vh;
 }
 
+/* ==== Plaid Vertical Ribbon === */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100vh;
+  background-image: url('1f94efbb-2f10-47b6-88e4-37fb708c01ec.png');
+  background-repeat: repeat-y;
+  background-size: cover;
+  border-right: 2px solid var(--accent-color);
+  z-index: -1;
+}
+
 /* ==== Main Container ==== */
 main {
   max-width: 700px;
   background: var(--card-bg);
-  margin: 3rem auto;
+  margin: 3rem auto 3rem 100px; /* pushes content away from ribbon */
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 0 20px var(--shadow);
@@ -106,28 +121,3 @@ footer {
   color: #888;
   font-size: 0.85rem;
 }
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 80px;
-  height: 100vh;
-  background-image:
-    
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 80px;
-  height: 100vh;
-  background-image: url('1f94efbb-2f10-47b6-88e4-37fb708c01ec.png');
-  background-repeat: repeat-y;
-  background-size: cover;
-  border-right: 2px solid var(--accent-color);
-  z-index: -1;
-}
-
